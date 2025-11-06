@@ -39,6 +39,8 @@ app.use((err, req, res, next) => {
   });
 });
 
+console.log("🚨 Checking MONGO URI:", process.env.MONGODB_URI);
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
