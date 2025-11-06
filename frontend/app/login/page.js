@@ -60,10 +60,8 @@ export default function LoginPage() {
         setError(result.error || 'Login failed. Please try again.');
       }
     } catch (err) {
-      alert("in catch");
       setError('An unexpected error occurred');
     } finally {
-      alert("in finally");
       setIsLoading(false);
     }
   };
